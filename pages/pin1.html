@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BohoSoul</title>
+    <!-- Corrected the path to the CSS file to ensure it applies correctly -->
+    <link rel="stylesheet" href="../assets/css/pinstyle1.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg  bg-light">
+      <img src="../assets/images/logo2.jpg" id="logo" alt="">
+       <a class="navbar-brand" href="#" style="color: rgb(207, 86, 86); font-weight: bolder; font-size: 40px;"><b><i><tt>     BohoSoul</tt></i></b></a>
+        <div class="navright collapse navbar-collapse  "  id="a1" >
+          <ul class="navbar-nav ml-auto " >
+           <li class="nav-item active " >
+              <a class="nav-link active"  href="pin1.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html"> Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="target" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#target" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#target" data-bs-slide-to="1"></li>
+          <li data-bs-target="#target" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hi carousel-caption d-none d-md-block"><span id="f1"><i> Let's go aesthetic!</i></span></div>
+            <img class="d-block w-100" src="../assets/images/download (3).jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <div class="hi carousel-caption d-none d-md-block"><span id="f2"><i> Explore the way your personality wants...</i></span></div>
+            <img class="d-block w-100" src="../assets/images/Landscapes - Summer.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <div class="hi carousel-caption d-none d-md-block"><span id="f3"><i> You are one step away from a "quality life" </i></span></div>
+            <img class="d-block w-100" src="../assets/images/midtown.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#target" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#target" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <div id="quote">
+            <img style="height: 750px; width: 50%;" src="../assets/images/seeit.png" alt="">
+            <pre id="pre1">See it, Make it,
+Try it, Do it.
+                 
+            </pre>
+            <pre id="pre2">The best part of BohoSoul is discovering
+new things and ideas from people 
+around the world.</pre>
+            <button id="button1" ><a href="Explore.html" style="color: aliceblue; text-decoration: none;"> Explore </a></button>
+      </div>
+      <div id="save">
+        <img src="../assets/images/decor1.jpg" id="i1" alt="">
+        <img src="../assets/images/decor6.jpg" id="i2" alt="">
+        <img src="../assets/images/decor4.jpg" id="i3" alt="">
+        <img src="../assets/images/decor5.jpg" id="i4" alt="">
+        <pre id="pre3">Save Ideas you like
+</pre>
+        <pre id="pre4">Collect your favourites so that you can 
+            get back to them later.</pre>
+            <button id="button2"><a href="Explore.html" style="color: rgb(18, 80, 16); text-decoration: none;">Explore</a></button>
+    </div>
+    <div id="signup">
+        <img src="../assets/images/signup.jpg" id="lastimg" alt="">
+        <div id="formdiv">
+            <div id="content">
+                <P style="font-weight: bold;" id="p1">Welcome to BohoSoul</P>
+                <p id="p2">Find new ideas to try</p>
+                <br><br>
+                 <form  class="form1" name="form1" action="Explore.html">
+                    
+                    <label for="" value="username@gmail.coms" >Email</label><br>
+                      <input class="f1" name="text1" type="text"><br>
+                    
+                   
+                    <label for="">Password</label><br>
+                    <input class="f1" type="password"><br>
+                    <label for="">Age</label><br>
+                    <input class="f1" type="text"><br> <br><br>
+                    <button type="submit" class="button" onclick="ValidateEmail(document.form1.text1)" style="color: rgb(255, 255, 255); border-radius: 15px;  background-color: rgb(71, 22, 22) ;padding:5px 90px;">Continue</button>
+                    <br><br>
+            
+                    <pre style="color:grey;" >by continuing you agree to 
+    <u>Terms and conditions</u></pre>
+
+                </form> 
+                
+                <script>  
+                  function ValidateEmail(input) {
+            
+                  var pat =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                
+                  if (input.value.match(pat)) {
+                
+                    alert("Valid email address!");
+                    return true;
+                
+                  } else {
+                
+                    alert("Invalid email address!");
+                    return false;
+                
+                  }
+                
+                } </script>
+            </div>
+        </div>
+        <pre id="lasttxt">Sign up
+to get
+your Ideas.
+                                </pre>
+    </div>
+</body>
+</html>
